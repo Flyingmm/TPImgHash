@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release|Win32">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DF8EB48A-0EED-424E-A23F-531FC5ADC4A4}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31829.152</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <OutDir>.\Unicode_Release\</OutDir>
+    <IntDir>.\Unicode_Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <OutDir>.\Unicode_Debug\</OutDir>
+    <IntDir>.\Unicode_Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/demo.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\cximage;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;VATI_EXTENSIONS;_CRT_SECURE_NO_DEPRECATE;_WIN32_IE=0x0400;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\Release/demo.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;VATI_EXTENSIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0809</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>wininet.lib;../png/Release/png.lib;../jpeg/Release/jpeg.lib;../zlib/Release/zlib.lib;../tiff/Release/tiff.lib;../jbig/Release/jbig.lib;../jasper/Release/jasper.lib;../mng/Release/mng.lib;../cximage/Release/cximage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../bin/demo.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release/demo.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/demo.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Unicode_Release/demo.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\cximage;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;VATI_EXTENSIONS;WIN32;NDEBUG;UNICODE;_CRT_SECURE_NO_DEPRECATE;_CRT_NON_CONFORMING_SWPRINTFS;_WIN32_IE=0x0400;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\Unicode_Release/demo.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Unicode_Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Unicode_Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Unicode_Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;VATI_EXTENSIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0809</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>wininet.lib;../png/Unicode_Release/png.lib;../jpeg/Unicode_Release/jpeg.lib;../zlib/Unicode_Release/zlib.lib;../tiff/Unicode_Release/tiff.lib;../jbig/Unicode_Release/jbig.lib;../jasper/Unicode_Release/jasper.lib;../mng/Unicode_Release/mng.lib;../cximage/Unicode_Release/cximage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../bin/demou.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Unicode_Release/demou.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Unicode_Release/demo.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Unicode_Debug/demo.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\cximage;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;VATI_EXTENSIONS;WIN32;_DEBUG;UNICODE;_CRT_SECURE_NO_DEPRECATE;_CRT_NON_CONFORMING_SWPRINTFS;_WIN32_IE=0x0400;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\Unicode_Debug/demo.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Unicode_Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Unicode_Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Unicode_Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;VATI_EXTENSIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0809</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>wininet.lib;../png/Unicode_Debug/png.lib;../jpeg/Unicode_Debug/jpeg.lib;../zlib/Unicode_Debug/zlib.lib;../tiff/Unicode_Debug/tiff.lib;../jbig/Unicode_Debug/jbig.lib;../jasper/Unicode_Debug/jasper.lib;../mng/Unicode_Debug/mng.lib;../cximage/Unicode_Debug/cximage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../bin/demoud.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Unicode_Debug/demoud.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Unicode_Debug/demo.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/demo.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\cximage;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;VATI_EXTENSIONS;_CRT_SECURE_NO_DEPRECATE;_WIN32_IE=0x0400;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\Debug/demo.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;VATI_EXTENSIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0809</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>wininet.lib;../png/Debug/png.lib;../jpeg/Debug/jpeg.lib;../zlib/Debug/zlib.lib;../tiff/Debug/tiff.lib;../jbig/Debug/jbig.lib;../jasper/Debug/jasper.lib;../mng/Debug/mng.lib;../cximage/Debug/cximage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../bin/demod.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/demod.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/demo.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BCMenu.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="demo.cpp" />
+    <ClCompile Include="demoDoc.cpp" />
+    <ClCompile Include="demoView.cpp" />
+    <ClCompile Include="DlgCapture.cpp" />
+    <ClCompile Include="DlgColorize.cpp" />
+    <ClCompile Include="DlgCombine.cpp" />
+    <ClCompile Include="DlgCustomFilter.cpp" />
+    <ClCompile Include="DlgDataExt.cpp" />
+    <ClCompile Include="DlgDecBpp.cpp" />
+    <ClCompile Include="DlgDither.cpp" />
+    <ClCompile Include="DlgExpand.cpp" />
+    <ClCompile Include="DlgFFT.cpp" />
+    <ClCompile Include="DlgFloodFill.cpp" />
+    <ClCompile Include="DlgGamma.cpp" />
+    <ClCompile Include="DlgHisto.cpp" />
+    <ClCompile Include="DlgIncBpp.cpp" />
+    <ClCompile Include="DlgJpeg.cpp" />
+    <ClCompile Include="DlgMix.cpp" />
+    <ClCompile Include="DlgOpacity.cpp" />
+    <ClCompile Include="DlgOptions.cpp" />
+    <ClCompile Include="DlgPalette.cpp" />
+    <ClCompile Include="DlgRepair.cpp" />
+    <ClCompile Include="DlgResample.cpp" />
+    <ClCompile Include="DlgRotate.cpp" />
+    <ClCompile Include="DlgShadow.cpp" />
+    <ClCompile Include="DlgSkew.cpp" />
+    <ClCompile Include="DlgText.cpp" />
+    <ClCompile Include="DlgThreshold.cpp" />
+    <ClCompile Include="DlgURL.cpp" />
+    <ClCompile Include="logomdi.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Quantize.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TwainCpp.cpp" />
+    <ClCompile Include="xTargetButton.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="demo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BCMenu.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="demo.h" />
+    <ClInclude Include="demoDoc.h" />
+    <ClInclude Include="demoView.h" />
+    <ClInclude Include="DlgCapture.h" />
+    <ClInclude Include="DlgColorize.h" />
+    <ClInclude Include="DlgCombine.h" />
+    <ClInclude Include="DlgCustomFilter.h" />
+    <ClInclude Include="DlgDataExt.h" />
+    <ClInclude Include="DlgDecBpp.h" />
+    <ClInclude Include="DlgDither.h" />
+    <ClInclude Include="DlgExpand.h" />
+    <ClInclude Include="DlgFFT.h" />
+    <ClInclude Include="DlgFloodFill.h" />
+    <ClInclude Include="DlgGamma.h" />
+    <ClInclude Include="DlgHisto.h" />
+    <ClInclude Include="DlgIncBpp.h" />
+    <ClInclude Include="DlgJpeg.h" />
+    <ClInclude Include="DlgMix.h" />
+    <ClInclude Include="DlgOpacity.h" />
+    <ClInclude Include="DlgOptions.h" />
+    <ClInclude Include="DlgPalette.h" />
+    <ClInclude Include="DlgRepair.h" />
+    <ClInclude Include="DlgResample.h" />
+    <ClInclude Include="DlgRotate.h" />
+    <ClInclude Include="DlgShadow.h" />
+    <ClInclude Include="DlgSkew.h" />
+    <ClInclude Include="DlgText.h" />
+    <ClInclude Include="DlgThreshold.h" />
+    <ClInclude Include="DlgURL.h" />
+    <ClInclude Include="logomdi.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Quantize.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TwainCpp.h" />
+    <ClInclude Include="xTargetButton.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\b1.ico" />
+    <Image Include="res\bg.BMP" />
+    <Image Include="res\bg.gif" />
+    <Image Include="res\bg.jpg" />
+    <Image Include="res\bg.tif" />
+    <Image Include="res\bg2.jpg" />
+    <Image Include="res\canc.ico" />
+    <Image Include="res\demo.ico" />
+    <Image Include="res\demoDoc.ico" />
+    <Image Include="res\Explorer.ico" />
+    <Image Include="res\gray.ico" />
+    <Image Include="res\ico2.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\no1.ico" />
+    <Image Include="res\ok.ico" />
+    <Image Include="res\r1.ico" />
+    <Image Include="res\testbmp.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+    <Image Include="Res\toolbar2.bmp" />
+    <Image Include="res\us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\demo.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CxImage\cximage.vcxproj">
+      <Project>{e3cd84e4-94e7-4ee5-b6e9-29684c245d44}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\jasper\jasper.vcxproj">
+      <Project>{d2b9fe0f-4cc4-42a0-879f-278133d1b10f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\jbig\jbig.vcxproj">
+      <Project>{1eda19e2-49f5-4d06-8b00-057206197d9f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\jpeg\Jpeg.vcxproj">
+      <Project>{ff17b443-6589-4c96-a611-546cfd070279}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\mng\mng.vcxproj">
+      <Project>{ea95ccba-a061-4afc-99f0-610147dc94ad}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\png\png.vcxproj">
+      <Project>{d73b9938-68e2-4962-973d-b7f2f1376fe7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\raw\libdcr.vcxproj">
+      <Project>{c87bef04-9f0e-4244-a94b-34f7a8b1ea06}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\tiff\Tiff.vcxproj">
+      <Project>{01557f4d-527b-4dd4-a3dd-46371c0a5487}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\zlib\zlib.vcxproj">
+      <Project>{3590030b-3a83-431b-a478-6c3496692933}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
